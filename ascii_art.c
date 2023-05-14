@@ -8,8 +8,13 @@ int r = 0, g = 0, b = 0;
 int reader(int size)
 {
     int i;
+    int loop = size;
+    if (size < 4)
+    {
+        size = 4;
+    }
     unsigned char arr[size];
-    for (i = 0; i < size; i++)
+    for (i = 0; i < loop; i++)
     {
         scanf("%c", &arr[i]);
     }
@@ -162,9 +167,9 @@ int main()
         }
     }
     int colour;
-    for (i = 0; i <= y; i++)
+    for (i = 0; i < y; i++)
     {
-        for (j = 0; j <= x; j++)
+        for (j = 0; j < x; j++)
         {
             resized_R[i][j] = (double)resized_R[i][j] / (resized_block_width[j] * block_height[i]);
             resized_G[i][j] = (double)resized_G[i][j] / (resized_block_width[j] * block_height[i]);
