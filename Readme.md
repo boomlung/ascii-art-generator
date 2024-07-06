@@ -14,10 +14,10 @@ The command to execute this program:
 
 ```bash
 gcc -o ascii_art ascii_art.c -lm    #complie the program
-./ascii_art < cuhk.bmp              #redirect the bitmap file to the executable
+./ascii_art < pikachu.bmp           #redirect the bitmap file to the executable
 ```
 
 The above output will be:
-![Example output](example.png)
+![Example output](pikachu_example.png)
 Original image:
-![Example image](cuhk.bmp)
+![Example image](pikachu.bmp)
