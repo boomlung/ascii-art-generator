@@ -118,7 +118,7 @@ int main()
     }
     struct winsize w;
     ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
-    int term_width = w.ws_col;
+    int term_width = w.ws_col - 1;
     double tmp = (double)width / term_width;
     if (tmp < 1)
     {
